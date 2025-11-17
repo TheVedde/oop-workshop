@@ -124,7 +124,7 @@ direction TB
     BaseMedia <|-- Images
 ```
 
-<h1><span style="background-color:red">Noun</span> / <mark>Verb</mark></h1>
+<h1><font color="red">Noun</font> / <font color="yellow">Verb</font></h1>
 
 <p>Sønderborg’s <span style="background-color:red">library</span> <span style="background-color:yellow">aims</span> to <span style="background-color:yellow">launch</span> a digital <span style="background-color:red">platform</span> to <span style="background-color:yellow">manage</span> and <span style="background-color:yellow">share</span> its diverse digital <span style="background-color:red">media</span> <span style="background-color:red">collection</span>. The <span style="background-color:red">system</span> <span style="background-color:yellow">should support</span> multiple <span style="background-color:red">types</span> of <span style="background-color:red">media</span>, including:</p>
 
