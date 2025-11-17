@@ -11,9 +11,115 @@ https://www.mermaidchart.com/app/projects/1d833c81-fdfb-403a-bfaa-77a4ad8a1839/d
 
 New Mermaid Test:
 ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+  classDiagram
+direction TB
+    class BaseUser {
+	    + int x
+	    + void xx()
+    }
+
+    class Borrower {
+        
+        + RateItem()
+    }
+
+    class Employee {
+    }
+
+    class Admin {
+    }
+
+    class BaseMedia {
+	    - string title
+	    + string GetTitle()
+    }
+
+    class E-Books {
+	    + title string
+	    + author string
+	    + pages int
+	    + publishYear int
+	    + ISBN string
+	    + language string
+        + Download()
+        + View()
+    }
+
+    class Movies {
+	    + title string
+	    + director string
+	    + genres string
+	    + releaseYear int
+	    + language string
+	    + duration int
+        + Download()
+        + Watch()
+    }
+
+    class Songs {
+	    + title string
+	    + composer string
+	    + singer string
+	    + genre string
+	    + fileType string
+	    + langauge string
+	    + duration int
+        + Download()
+        + PlaySong()
+    }
+
+    class Video-games {
+	    + title string
+	    + publisher string
+	    + genre string
+	    + releaseYear int
+	    + supportedPlatforms string[]
+        + isCompleted bool
+        + Download()
+        + PlayGame()
+    }
+
+    class Apps {
+	    + title string
+	    + publisher string
+	    + version int
+	    + language string
+	    + supportedPlatforms string[]
+        + Download()
+        + Execute()
+    }
+
+    class Podcasts {
+        + title string
+        + hosts string
+        + guests string
+        + episodeNumber int
+        + releaseYear int
+        + language string
+        + episodeNumberIsComplete int
+        + Download()
+        + PlayPodcast()
+    }
+
+    class Images {
+	    + title string
+        + resolution string
+        + fileFormat string
+        + fileSize long
+        + dateTaken string
+        + Download()
+        + Display()
+    }
+
+    BaseUser <|-- Borrower
+    BaseUser <|-- Employee
+    BaseUser <|-- Admin
+    BaseMedia <|-- E-Books
+    BaseMedia <|-- Movies
+    BaseMedia <|-- Songs
+    BaseMedia <|-- Songs
+    BaseMedia <|-- Video-games
+    BaseMedia <|-- Apps
+    BaseMedia <|-- Podcasts
+    BaseMedia <|-- Images
 ```
