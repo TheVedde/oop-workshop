@@ -125,4 +125,4 @@ direction TB
 ```
 
 Noun/Verb analyse:
-![Alt-tekst](sti/til/dit/billede.png)
+![Alt-tekst](Noun/Verb.png)
