@@ -1,0 +1,5 @@
+#Ignore Build artifacts
+obj/
+bin/
+.idea/
+.vs/
