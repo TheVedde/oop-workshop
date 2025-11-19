@@ -8,9 +8,11 @@ class Movie : BaseMedia
 
     public Movie(string title, string director, string genre, int releaseYear, string language, int duration)
     {
+        type = "Movie";
         this.title = title;
         this.director = director;
         this.genre = genre;
+        this.releaseYear = releaseYear;
         this.language = language;
         this.duration = duration;
     }

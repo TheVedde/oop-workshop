@@ -7,6 +7,7 @@ class App : BaseMedia
 
     public App(string title, string publisher, int version, string language, string[] supportedPlatforms)
     {
+        type = "App";
         this.title = title;
         this.publisher = publisher;
         this.version = version;
