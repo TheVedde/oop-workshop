@@ -1,4 +1,5 @@
-﻿using OOP_Workshop.Persistance.User;
+﻿using System.ComponentModel.Design;
+using OOP_Workshop.Persistance.User;
 
 namespace OOP_Workshop
 {
@@ -6,14 +7,66 @@ namespace OOP_Workshop
     {
         static Borrower user1 = new Borrower(1,"User",20,"123456-22");
         static Library library1 = new Library();
-        static BaseMedia book = new E_Book("this title", "", 0, 0, "", "");
+
+        static string view = "View library items";
+        static string select = "";
+        static string borrow = "";
+        static string review = "";
+
+        public struct Command
+        {
+            public string commandText;
+            public ConsoleKey keyActivation;
+            public Action functionCall;
+
+            public Command[] nextCommands;
+        }
+
         static void Main(string[] args)
         {
-            library1.AddEntry(book);
+            int media = 0;
+
+            Command borrowCommand = new Command
+            {
+                commandText = "Which item do you wish to borrow?",
+                keyActivation = ConsoleKey.D1,
+                functionCall = () => library1.Borrow(media),
+                nextCommands = new Command[0]
+            };
+
+            AddDummyData(25);
             Console.WriteLine($"Hello {user1.Name}!");
             Console.WriteLine("What would you like to do?");
-            AddDummyData(25);
-            //Console.ReadLine();
+            Console.CursorVisible = false;
+
+            Command[] currentCommands =
+            [
+                new Command { 
+                    commandText = new string(" -> " + view),
+                    keyActivation = ConsoleKey.D1,
+                    functionCall = () => library1.DisplayEntriesByType(), 
+                    nextCommands = new Command[0]
+                }
+            ];
+
+            do
+            {
+                foreach (Command command in currentCommands)
+                {
+                    Console.WriteLine(command.keyActivation + command.commandText);
+                }
+                Console.WriteLine("\nWaiting for input...");
+                ConsoleKey keyPressed = Console.ReadKey(true).Key;
+
+                foreach (Command command in currentCommands)
+                {
+                    if (keyPressed == command.keyActivation)
+                    {
+                        command.functionCall();
+                    }
+                }
+
+            } while (true);
             //library1.DisplayEntries();
             library1.DisplayEntriesByType();
 

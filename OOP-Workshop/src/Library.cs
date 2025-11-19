@@ -25,9 +25,18 @@
         {
             files = files.OrderBy(m => m.type).ToList();
 
+            string lastType = "";
             for (int i = 0; i < files.Count; i++)
             {
-                Console.WriteLine(files[i].type + " -> " + files[i].title);
+                if (files[i].type != lastType)
+                {
+                    Console.WriteLine("\n\nCategory: " + files[i].type);
+                    Console.WriteLine(new string('-', 50));
+                    lastType = files[i].type;
+                }
+
+                Console.WriteLine("{0, -15} {1, 0}", new string("> " + i + " - " + files[i].type), files[i].title);
+                Console.WriteLine(new string('-', 50));
             }
         }
 
