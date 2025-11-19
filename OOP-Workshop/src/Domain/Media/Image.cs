@@ -2,10 +2,10 @@ class Image : BaseMedia
 {
     public string resolution;
     public string fileFormat;
-    public long fileSize;
+    public double fileSize;
     public string dateTaken;
 
-    public Image(string title, string resolution, string fileFormat, long fileSize, string dateTaken)
+    public Image(string title, string resolution, string fileFormat, double fileSize, string dateTaken)
     {
         type = "Image";
         this.title = title;
