@@ -3,13 +3,14 @@
     public class Library
     {
         List<BaseMedia> files;
+
         public Library()
         {
             files = new List<BaseMedia>();
         }
-        public void Borrow()
+        public BaseMedia Borrow(int fileId)
         {
-
+            return files[fileId];
         }
 
         public void DisplayEntries()
@@ -22,10 +23,11 @@
 
         public void DisplayEntriesByType()
         {
-            files.GroupBy(m => m.GetType()).ToList();
-            foreach (BaseMedia media in files)
+            files = files.OrderBy(m => m.type).ToList();
+
+            for (int i = 0; i < files.Count; i++)
             {
-                Console.WriteLine(media.title);
+                Console.WriteLine(files[i].type + " -> " + files[i].title);
             }
         }
 

@@ -9,6 +9,7 @@ class Song : BaseMedia
 
     public Song(string title, string composer, string singer, string genre, string fileType, string language, int duration)
     {
+        type = "Song";
         this.title = title;
         this.composer = composer;
         this.singer = singer;

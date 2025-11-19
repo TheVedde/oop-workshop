@@ -8,6 +8,7 @@ class E_Book : BaseMedia
 
     public E_Book(string title, string author, int pages, int publishYear, string ISBN, string language)
     {
+        type = "E_Book";
         this.title = title;
         this.author = author;
         this.pages = pages;

@@ -7,6 +7,7 @@ class Image : BaseMedia
 
     public Image(string title, string resolution, string fileFormat, long fileSize, string dateTaken)
     {
+        type = "Image";
         this.title = title;
         this.resolution = resolution;
         this.fileFormat = fileFormat;
