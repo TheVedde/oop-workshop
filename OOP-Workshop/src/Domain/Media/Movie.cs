@@ -8,6 +8,11 @@ class Movie : BaseMedia
 
     public Movie(string title, string director, string genre, int releaseYear, string language, int duration)
     {
+        this.title = title;
+        this.director = director;
+        this.genre = genre;
+        this.language = language;
+        this.duration = duration;
     }
 
     public void Watch()

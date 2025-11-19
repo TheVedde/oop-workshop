@@ -8,6 +8,12 @@ class Video_Game : BaseMedia
 
     public Video_Game(string title, string publisher, string genre, int releaseYear, string[] supportedPlatforms, bool isCompleted)
     {
+        this.title = title;
+        this.publisher = publisher;
+        this.genre = genre;
+        this.releaseYear = releaseYear;
+        this.supportedPlatforms = supportedPlatforms;
+        this.isCompleted = isCompleted;
     }
 
     public void PlayGame()

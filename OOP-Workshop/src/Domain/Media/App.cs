@@ -7,11 +7,16 @@ class App : BaseMedia
 
     public App(string title, string publisher, int version, string language, string[] supportedPlatforms)
     {
+        this.title = title;
+        this.publisher = publisher;
+        this.version = version;
+        this.language = language;
+        this.supportedPlatforms = supportedPlatforms;
     }
 
     public void Execute()
     {
-        Console.WriteLine($"You are now execitng {title}.");
+        Console.WriteLine($"You are now executing {title}.");
         return;
     }
 }

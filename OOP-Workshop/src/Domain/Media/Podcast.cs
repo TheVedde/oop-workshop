@@ -9,6 +9,13 @@ class PodcastEpisode : BaseMedia
 
     public PodcastEpisode(string title, string[] hosts, string[] guests, int episodeNumber, int releaseYear, string language, bool episodeIsComplete)
     {
+        this.title = title;
+        this.hosts = hosts;
+        this.guests = guests;
+        this.episodeNumber = episodeNumber;
+        this.releaseYear = releaseYear;
+        this.language = language;
+        this.episodeIsComplete = episodeIsComplete;
     }
 
     public void PlayPodcast()
