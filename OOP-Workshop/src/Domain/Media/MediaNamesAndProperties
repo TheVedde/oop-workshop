@@ -1,15 +1,122 @@
 
 E_Books:
+    author
+    pages
+    publishYear
+    ISBN
+    language
+
+    The Bible:
+        Pages:
+            1200
+        Publish Year:
+            50
+        ISBN:
+            9789362142481
+        Language:
+            English
+
+    Hairy Potter:
+        Pages:
+            223
+        Publish Year:
+            1997
+        ISBN:
+            9781781100486
+        Language:
+            English
+
+    The Guis World Records 2022:
+        Pages:
+            256
+        Publish Year:
+            2021
+        ISBN:
+            1913484106
+        Language:
+            English
 
 
 Images:
+    resolution
+    fileFormat
+    fileSize
+    dateTaken
 
+    Man Petting A Dog:
+        File Format:
+            PNG
+        File Size:
+            4 mb
+        Date Taken:
+            03/05/2023
+
+
+    Man Petting A Cat:
+        File Format:
+            PNG
+        File Size:
+            8 mb
+        Date Taken:
+            04/05/2023
+
+    Man Petting A Crocodile:
+        File Format:
+            PNG
+        File Size:
+            5 mb
+        Date Taken:
+            10/06/2023
 
 Movies:
     director
     genre
+    releaseYear
     language
     duration
+
+    60ShadesOfBlack:
+        Director:
+            Sam Taylor-Johnson
+        Genre:
+            Romance
+            Erotica
+            Drama
+            Suspense
+            Thriller
+        Release Year:
+            2015
+        Duration:
+            125 minutes
+
+    Down:
+        Director:
+            Pete Docter
+        Genre:
+            Animation
+            Adventure
+            Children's Film
+            Fantasy
+            Comedy
+        Release Year:
+            2009
+        Duration:
+            95 minutes
+
+    The Bee Film:
+        Director:
+            Steve Hickner
+        Genre:
+            Animation
+            Comedy
+            Adventure
+            Romance
+            Action
+            Drama
+        Release Year:
+            2007
+        Duration:
+            91 minutes
 
 Podcasts:
     hosts
