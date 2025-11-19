@@ -9,8 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\" />
-    <Folder Include="Persistance\Media\" />
+    <Folder Include="Domain\Media\" />
     <Folder Include="Presentation\" />
   </ItemGroup>
 
