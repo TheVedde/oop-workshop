@@ -1,0 +1,157 @@
+
+E_Books:
+
+
+Images:
+
+
+Movies:
+    director
+    genre
+    language
+    duration
+
+Podcasts:
+    hosts
+    guests
+    episodeNumber
+    releaseYear
+    language
+
+    TheLongTalk Episode 3
+        Hosts:
+            The Long Talker
+            Bob
+        Guests:
+            Lebron James
+            Shaquille O'Neal
+        Release Year:
+            2020
+        Language:
+            English
+
+    TheShortTalk Episode 6
+        Hosts:
+            The Short Talker
+            Greg Gregerson
+        Guests:
+            Andrew Tate
+            Taylor Swift
+        Release Year:
+            2023
+        Language:
+            English
+
+    ThePoliticalTalk Episode 14:
+        Hosts:
+            The Political Talker
+            The Right Winger
+            The Left Winger
+        Guests:
+            Donald Trump
+            Bill Clinton
+        Release Year:
+            2025
+        Language:
+            English
+
+Songs:
+    composer
+    singer
+    genre
+    fileType
+    language
+    duration
+
+    CatNyan:
+        Composer:
+            NyanCat
+        Singer:
+            NyanCat
+        FileType:
+            mp3
+        Language:
+            Meow
+        Duration:
+            36000 seconds
+
+    YCAM:
+        Composer:
+            Jacques Morali
+        Singer:
+            Village People
+        FileType:
+            mp3
+        Language:
+            English
+        Duration:
+            242 seconds
+
+    I Will Give You Up:
+        Composer:
+            Rick Astley
+        Singer:
+            Rick Astley
+        FileType:
+            mp3
+        Language:
+            English
+        Duration:
+            214 seconds
+
+Video_games:
+    publisher
+    genre
+    releaseYear
+    supportedPlatforms
+
+    CraftMine:
+        Publisher:
+            Majong
+        Genre:
+            Adventure
+            Open World Surviva Crafting
+            Sandbox
+            Survival
+            3D
+        Release Year:
+            2009
+        Supported Platforms:
+            PC
+            Mobile
+            PS4
+            PS5
+            Xbox
+
+    Blue Alive Redemption:
+        Publisher:
+            StoneSun Games
+        Genre:
+            Open World
+            Story Rich
+            Western
+            Multiplayer
+            Adventure
+            Action
+            3D
+        Release Year:
+            2018
+        Supported Platforms
+            PC
+            PS4
+            PS5
+
+    Amongst Ourselves;
+        Publisher:
+            InsideSloth
+        Genre:
+            Multiplayer
+            Social Deduction
+            Online Co-Op
+            Space
+            2D
+        Release Year:
+            2018
+        Supported Platforms:
+            PC
+            Mobile

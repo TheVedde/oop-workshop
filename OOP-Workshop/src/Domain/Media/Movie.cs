@@ -11,6 +11,7 @@ class Movie : BaseMedia
         this.title = title;
         this.director = director;
         this.genre = genre;
+
         this.language = language;
         this.duration = duration;
     }
