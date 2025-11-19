@@ -8,4 +8,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Persistance\Media\" />
+    <Folder Include="Persistance\User\" />
+    <Folder Include="Presentation\" />
+  </ItemGroup>
+
 </Project>
