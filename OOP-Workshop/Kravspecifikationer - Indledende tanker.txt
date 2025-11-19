@@ -1,0 +1,22 @@
+Funktionel krav:
+Skal kunne håndtere de 7 forskellige slags media.
+
+Hvert media skal have forskellige properties. Nogle properties er ens for alle slags media.
+
+Man skal kunne låne medier.
+
+Der skal være forskellige slags brugere med forskellige egenskaber.
+- Borrower skal kunne låne media og Review dem. (Aflevere står ikke konkret)
+- Employee skal kunne håndtere kollektionen af media. Tilføje og fjerne media (Redigere står ikke konkret)
+- Admin kan håndtere users: Herunder se, skabe, slette, og opdatere personlig information for hver users.
+
+Alle inputs skal valideres.
+
+Brugere skal kunne "download/se/høre" deres media. Dette implementeres ikke rigtigt, men pseudo.
+
+Non-funktionel krav:
+De forskellige actions, kategorier, media osv. skal fremvises på en struktureret måde.
+
+Der skal være klare instruktioner for hvordan brugere navigerer programmet.
+
+Programmet skal bygges således at nye slags media kan tilføjes uden det påvirker eksisterende funktionalitet
